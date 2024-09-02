@@ -21,10 +21,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
     
-    - name: Check Python Files
-      run: |
-        git ls-files '*.py'
-    
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
+
+    - name: Post Pylint Result
+      if: failure()
+      run: echo "Pylint check failed. Please check the errors and warnings above."
