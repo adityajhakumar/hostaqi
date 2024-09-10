@@ -193,8 +193,7 @@ if city:
                 for plant, info in plant_database[risky_pollutant].items():
                     st.write(f"- [{plant}]({info['link']}): {info['description']}")
             
-            # Award green credits
-            st.write("🌿 You've earned **10 Green Credits**! 🌿")
+            
 
             # Link to website
             st.markdown("[For more queries, visit our website!](https://tervive.vercel.app/)")
