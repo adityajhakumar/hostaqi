@@ -197,5 +197,6 @@ if city:
 
             # Link to website
             st.markdown("[For more queries, visit our website!](https://tervive.vercel.app/)")
+            st.markdown("[To Track your plants growth and verify it please visit here!](https://hostaqi-jcvnydnopmmpkmexbwwr5b.streamlit.app/)")
     else:
         st.error(f"Unable to fetch data for {city}.")
